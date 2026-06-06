@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indigenous Leader Allyship Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1>To Be An Ally</h1>
+      <a href="#quiz">Start Quiz</a>
+    </nav>
+
+    <section class="hero-text">
+      <p class="tag">NBE3UO Guided Inquiry Project</p>
+      <h2>Which Indigenous Leader's Values Do You Connect With?</h2>
+      <p>
+        This website helps students learn about Indigenous leaders, communities,
+        achievements, and allyship. The goal is not to “become” Indigenous or
+        claim an identity. The goal is to discover which leader’s values connect
+        with your own and learn how their work challenges stereotypes.
+      </p>
+      <a class="button" href="#quiz">Take the Quiz</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Inquiry Question</h2>
+      <p class="big-question">
+        How can learning about Indigenous leaders and communities help students
+        challenge stereotypes and become better allies?
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Why This Matters</h3>
+        <p>
+          Many students learn about Indigenous peoples mainly through hardship,
+          residential schools, or stereotypes. Those topics are important, but
+          allyship also means learning about Indigenous success, leadership,
+          knowledge, creativity, and resistance.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>TRC Connection</h3>
+        <p>
+          This project connects to the Truth and Reconciliation Commission’s
+          Calls to Action 62–65, which focus on education for reconciliation.
+          My website supports this by helping students learn about Indigenous
+          historical and contemporary contributions.
+        </p>
+      </article>
+    </section>
+
+    <section id="quiz" class="card quiz-card">
+      <h2>Take the Quiz</h2>
+      <p>
+        Choose the answer that best fits you. At the end, you will be matched
+        with an Indigenous leader whose work connects to your values.
+      </p>
+
+      <form id="quizForm">
+        <div class="question">
+          <h3>1. What issue matters most to you?</h3>
+          <label><input type="radio" name="q1" value="autumn" required> Protecting water, land, and the environment</label>
+          <label><input type="radio" name="q1" value="cindy"> Fair treatment for children and families</label>
+          <label><input type="radio" name="q1" value="murray"> Truth, justice, and education</label>
+          <label><input type="radio" name="q1" value="tanya"> Art, culture, and self-expression</label>
+          <label><input type="radio" name="q1" value="wab"> Leadership and public service</label>
+          <label><input type="radio" name="q1" value="tomson"> Storytelling and language</label>
+        </div>
+
+        <div class="question">
+          <h3>2. If you saw a stereotype being repeated, what would you do?</h3>
+          <label><input type="radio" name="q2" value="murray" required> Explain the truth and help people learn</label>
+          <label><input type="radio" name="q2" value="cindy"> Speak up for fairness and human rights</label>
+          <label><input type="radio" name="q2" value="tanya"> Use creativity to challenge the stereotype</label>
+          <label><input type="radio" name="q2" value="autumn"> Connect it to land, water, and responsibility</label>
+          <label><input type="radio" name="q2" value="wab"> Lead a respectful discussion</label>
+          <label><input type="radio" name="q2" value="tomson"> Tell a story that shows a different perspective</label>
+        </div>
+
+        <div class="question">
+          <h3>3. What kind of impact do you want to make?</h3>
+          <label><input type="radio" name="q3" value="autumn" required> Protect future generations and the environment</label>
+          <label><input type="radio" name="q3" value="murray"> Help people understand the truth about history</label>
+          <label><input type="radio" name="q3" value="cindy"> Make systems more equal for children</label>
+          <label><input type="radio" name="q3" value="wab"> Represent people and create change through leadership</label>
+          <label><input type="radio" name="q3" value="tomson"> Keep culture and language alive through stories</label>
+          <label><input type="radio" name="q3" value="tanya"> Use art to make people feel and think differently</label>
+        </div>
+
+        <div class="question">
+          <h3>4. Which school subject connects most with you?</h3>
+          <label><input type="radio" name="q4" value="murray" required> Law, history, or civics</label>
+          <label><input type="radio" name="q4" value="autumn"> Science or geography</label>
+          <label><input type="radio" name="q4" value="tanya"> Music, drama, or visual art</label>
+          <label><input type="radio" name="q4" value="tomson"> English or creative writing</label>
+          <label><input type="radio" name="q4" value="cindy"> Social justice or family studies</label>
+          <label><input type="radio" name="q4" value="wab"> Leadership or politics</label>
+        </div>
+
+        <div class="question">
+          <h3>5. What does allyship mean most to you?</h3>
+          <label><input type="radio" name="q5" value="murray" required> Learning the truth before speaking</label>
+          <label><input type="radio" name="q5" value="cindy"> Supporting equity and fairness</label>
+          <label><input type="radio" name="q5" value="autumn"> Respecting land and water</label>
+          <label><input type="radio" name="q5" value="tanya"> Respecting Indigenous art and culture</label>
+          <label><input type="radio" name="q5" value="wab"> Using your voice to lead change</label>
+          <label><input type="radio" name="q5" value="tomson"> Listening to stories and protecting language</label>
+        </div>
+
+        <button type="submit" class="button">See My Match</button>
+      </form>
+    </section>
+
+    <section id="result" class="card result-card hidden">
+      <h2>Your Match</h2>
+      <div id="resultContent"></div>
+      <button id="retakeButton" class="button secondary">Retake Quiz</button>
+    </section>
+
+    <section class="card">
+      <h2>How This Website Encourages Allyship</h2>
+      <ul class="ally-list">
+        <li>It teaches students about Indigenous leaders instead of only stereotypes.</li>
+        <li>It shows that Indigenous communities are diverse and have many forms of leadership.</li>
+        <li>It encourages students to connect values like justice, education, water protection, and storytelling to real people.</li>
+        <li>It reminds students that allyship begins with listening, learning, and supporting Indigenous voices.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Sources / Works Cited Starter</h2>
+      <p>
+        Use these sources for your MLA Works Cited page. Your teacher may want
+        them formatted with hanging indents in the final presentation.
+      </p>
+      <ul class="sources">
+        <li>Government of Canada. “Education for Reconciliation.” <em>RCAANC-CIRNAC</em>.</li>
+        <li>Government of Canada. “About the Honourable Murray Sinclair.” <em>Canadian Heritage</em>.</li>
+        <li>The Canadian Encyclopedia. “Autumn Peltier.”</li>
+        <li>Government of Canada. “Cindy Blackstock.” <em>Women of Impact in Canada</em>.</li>
+        <li>Government of Canada. “Tanya Tagaq.” <em>Women of Impact in Canada</em>.</li>
+        <li>The Canadian Encyclopedia. “Tomson Highway.”</li>
+        <li>Government of Manitoba. “Office of the Premier.”</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for NBE3UO Guided Inquiry Project | To Be An Ally</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
